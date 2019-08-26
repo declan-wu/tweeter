@@ -2,7 +2,7 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-The project is built upon starter code that has some backend logic (written in Node.js). The purpose of this project is to practice front end skills and build a responsive Web app with HTML, CSS, JS, jQuery and AJAX. 
+The project is built in Node.js for backend and  HTML, CSS, JS, jQuery and AJAX for frontend. The purpose of this project is to practice front end skills and build a responsive Web app. 
 
 ## Getting Started
 
