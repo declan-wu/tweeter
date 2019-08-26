@@ -1,0 +1,44 @@
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+
+.new-tweet {
+  font-family: Bungee;
+  display: block;
+  min-height: 150px;
+}
+
+.new-tweet .error-msg {
+  border: 5px solid red;
+  margin-top: 1em;
+  font-family: Bungee;
+  display: none;
+  font-weight: bold;
+  color: red;
+}
+
+.new-tweet textarea {
+  display: center;
+  margin-top: 1em;
+  border: none;
+  border-bottom: solid black;
+  background-color: #f4f1ec;
+  font-family: "Source Sans Pro", sans-serif;
+  height: 2em;
+  width: 100%;
+}
+
+.new-tweet input {
+  float: left;
+  color: white;
+  background-color: #4056a1;
+}
+
+.new-tweet span {
+  float: right;
+}

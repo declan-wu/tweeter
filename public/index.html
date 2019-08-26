@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <title>Tweeter - Home Page</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:400,400i,700,700i&display=swap"
+    />
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet-container.css" type="text/css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+      rel="stylesheet"
+    />
+
+    <!-- External JS -->
+    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+
+    <!-- App JS -->
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
+    <script type="text/javascript" src="/scripts/tweets-lolz.js"></script>
+  </head>
+
+  <body>
+    <!-- Top nav bar (fixed) -->
+    <div>
+      <nav>
+        <span class="logo">tweeter</span>
+        <div>
+          <p><b>Write</b> a new tweet</p>
+          <button class="fas fa-angle-double-down"></button>
+        </div>
+      </nav>
+      <div id="placeholder"></div>
+    </div>
+
+    <header>
+      <div class="profile">
+        <img src="/images/profile-hex.png" />
+        <h2 class="name">Diana</h2>
+      </div>
+    </header>
+
+    <!-- Page-specific (main) content here -->
+    <main class="container">
+      <!-- new tweet -->
+      <section class="new-tweet">
+        <div class="error-msg"></div>
+        <form method="POST" action="/tweets">
+          <textarea
+            name="tweet"
+            placeholder="What are you humming about?"
+          ></textarea>
+          <br />
+          <input type="submit" value="Tweet" />
+          <span class="counter">140</span>
+        </form>
+      </section>
+
+      <section class="tweets-container"></section>
+    </main>
+  </body>
+</html>

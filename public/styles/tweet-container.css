@@ -1,0 +1,66 @@
+.tweets-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-content: space-between;
+}
+
+.tweet-feed {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  border: 5px solid #545149;
+  padding: 10px;
+  margin-bottom: 0.5em;
+}
+
+.tweet-feed > .user-img {
+  justify-self: center;
+  align-self: center;
+  height: 100px;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.tweet-feed > .name {
+  justify-self: start;
+  align-self: center;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.tweet-feed > .username {
+  justify-self: center;
+  align-self: center;
+  grid-row: 1;
+  grid-column: 7;
+  color: #59f8e8;
+}
+
+.tweet-feed > .tweet {
+  justify-self: center;
+  align-self: end;
+  grid-row: 2;
+  grid-column: 1 / span 8;
+  border: none;
+  border-bottom: solid black;
+  background-color: #f4f1ec;
+  width: 95%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.tweet-feed > .tweet > p {
+  justify-self: center;
+  align-self: center;
+}
+
+.tweet-feed > .tweet-info {
+  justify-self: center;
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.hoverShadow {
+  -moz-box-shadow: 5px 5px 6px #93e1d8;
+  -webkit-box-shadow: 5px 5px 6px #93e1d8;
+  box-shadow: 5px 5px 6px #93e1d8;
+}

@@ -1,0 +1,68 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*
+ * Global layout stuff
+ */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #545149;
+  background-color: #f4f1ec;
+  font-size: 14px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) {
+  body {
+    margin-top: 10rem;
+    flex-direction: row;
+    justify-content: start;
+    font-size: 18px;
+  }
+
+  body header {
+    width: 33%;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  body .container {
+    width: 66%;
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  body {
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 12rem;
+    font-size: 24px;
+  }
+
+  body header {
+    width: 33%;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  body .container {
+    width: 66%;
+    margin-right: 3rem;
+  }
+}
